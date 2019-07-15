@@ -1,5 +1,5 @@
 # displacement-ts-server-terraform
-This repo is used to automatically setup a leaflet displacement time series server for a configured HySDS/ARIA system
+Used to automatically setup a leaflet displacement time series server for configured HySDS/ARIA system
 
 ## Requirements
 1. Install [Terraform](https://www.terraform.io/) onto Mozart machine.
