@@ -13,6 +13,7 @@ else
 fi
 
 # Update configs/certs/server.cnf and create self-signed SSL certs
+export PASS_PHRASE=hysds
 cd /home/ops/mozart/ops/displacement-ts-server/configs/certs
 openssl genrsa -des3 -passout pass:$PASS_PHRASE -out server.key 1024
 OPENSSL_CONF=server.cnf openssl req -passin pass:$PASS_PHRASE -new -key server.key -out server.csr
