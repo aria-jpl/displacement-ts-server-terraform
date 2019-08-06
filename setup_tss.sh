@@ -23,5 +23,7 @@ chmod 600 server.key*
 openssl x509 -req -days 99999 -in server.csr -signkey server.key -out server.crt
 
 # Update time-series leaflet server
+cd /home/ops/mozart/ops/displacement-ts-server
+chmod 700 docker_compose.sh
 cd /home/ops/mozart/ops/displacement-ts-server/update_tss
 bash $TSS_REPO_DIR/update_tss/update_tss.sh
